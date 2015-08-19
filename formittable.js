@@ -41,7 +41,7 @@ if (emptyBtn != null){
 	emptyBtn.addEventListener('click', emptyFields, false);
 }
 
-if (fselx != null) {
+if (fselx[0] != null) {
 	for(var i=0; i<fselx.length; i++){
 		fselx[i].addEventListener('change', selectChange, false);
 		document.getElementById(fselx[i].name).value = fselx[i].value;
@@ -49,7 +49,7 @@ if (fselx != null) {
 	var hijo = fselx[0].firstChild;
 }
 
-if (submitBtns != null) {
+if (submitBtns[0] != null) {
 	for(var i=0; i<submitBtns.length; i++){
 		submitBtns[i].addEventListener('click', commitData, false);
 	}
