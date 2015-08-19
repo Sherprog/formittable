@@ -69,7 +69,7 @@ function showSaved () {
 			finputs[i].value = '';
 		}
 	}
-	if (fselx !=null) {
+	if (fselx[0] !=null) {
 		for(var i=0; i<fselx.length; i++){
 			if (localStorage[reverseURL+'formbl-'+fselx[i].name] != null){
 				fselx[i].value = localStorage[reverseURL+'formbl-'+fselx[i].name];
@@ -85,7 +85,7 @@ function clearSaved () {
 		finputs[i].value = '';
 		localStorage.removeItem(reverseURL+'formbl-'+finputs[i].id);
 	}
-	if (fselx !=null) {
+	if (fselx[0] !=null) {
 		selectReset();
 	}	
 }
